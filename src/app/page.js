@@ -8,7 +8,16 @@ export default function Home() {
       <div className='flex flex-col max-w-xl lg:max-w-none mx-auto lg:flex-row mt-16'>
         <div className='flex flex-col lg:pr-6 w-full lg:w-[30%]'>
           <div className='py-6 border-2 border-black/10 rounded-md mt-4 flex gap-4 px-4 items-center'>
-            <div className='bg-black/10 rounded-full h-20 w-20 block'></div>
+            <div className='h-20 w-20 block'>
+              <Image
+                src='/images/avatar.jpg'
+                width={2500}
+                height={2500}
+                alt='change me'
+                className='object-cover object-top w-full h-full rounded-full'
+                priority
+              />
+            </div>
             <p className='max-w-sm w-[80%] ml-auto'>
               This is a bio about someone who works in tech. This is the second
               sentence.
@@ -29,7 +38,16 @@ export default function Home() {
           ))}
         </div>
 
-        <div className='w-full h-[35vh] lg:h-[91vh] lg:fixed right-4 lg:mt-4 bg-orange-500 lg:ml-auto lg:w-[69%] aspect-square border-2 border-black/10 rounded-md'></div>
+        <div className='w-full h-[35vh] lg:h-[91vh] lg:fixed right-4 lg:mt-4  lg:ml-auto lg:w-[69%] aspect-square border-2 border-black/10 rounded-md'>
+          <Image
+            src='/images/mobile-app-design.png'
+            width={2500}
+            height={2500}
+            alt='change me'
+            className='object-cover w-full h-full'
+            priority
+          />
+        </div>
       </div>
     </PageWrapper>
   )
