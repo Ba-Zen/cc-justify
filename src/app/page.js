@@ -1,11 +1,12 @@
+import Image from 'next/image'
+
 import PageWrapper from '@/components/page-wrapper'
 import Pill from '@/components/pill'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <PageWrapper>
-      <div className='flex flex-col max-w-xl lg:max-w-none mx-auto lg:flex-row mt-16'>
+      <div className='flex flex-col max-w-xl lg:max-w-none mx-auto lg:flex-row mt-10'>
         <div className='flex flex-col lg:pr-6 w-full lg:w-[30%]'>
           <div className='py-6 border-2 border-black/10 rounded-md mt-4 flex gap-4 px-4 items-center'>
             <div className='h-20 w-20 block'>
@@ -38,7 +39,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className='w-full h-[35vh] lg:h-[91vh] lg:fixed right-4 lg:mt-4  lg:ml-auto lg:w-[69%] aspect-square border-2 border-black/10 rounded-md'>
+        <div className='w-full h-[35vh] lg:h-[89.5vh] lg:fixed top-10 right-4 lg:mt-4  lg:ml-auto lg:w-[69%] aspect-square border-2 border-black/10 rounded-lg overflow-hidden'>
           <Image
             src='/images/mobile-app-design.png'
             width={2500}
