@@ -39,13 +39,13 @@ export default function Home() {
           ))}
         </div>
 
-        <div className='w-full h-[35vh] lg:h-[89.5vh] lg:fixed top-10 right-4 lg:mt-4  lg:ml-auto lg:w-[69%] aspect-square border-2 border-black/10 rounded-lg overflow-hidden'>
+        <div className='w-full h-[35vh] bg-black lg:h-[89.5vh] lg:fixed top-10 right-4 lg:mt-4  lg:ml-auto lg:w-[69%] aspect-square  rounded-lg overflow-hidden'>
           <Image
             src='/images/mobile-app-design.png'
             width={2500}
             height={2500}
             alt='change me'
-            className='object-cover w-full h-full'
+            className='object-cover lg:object-contain w-full h-full'
             priority
           />
         </div>
